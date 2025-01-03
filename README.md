@@ -1,5 +1,4 @@
-# PolyMersion
-# Procedure for Polymer Degradation Testing using UR10-e Robot Arm
+# PolyMersion: Automated Procedure for Polymer Degradation Testing through Water Immersion using UR10-e Robot Arm
 
 Automated Experimental Workflow for Polymer Degradation Testing using UR10-e Robot Arm
 
