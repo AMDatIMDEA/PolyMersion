@@ -5,10 +5,10 @@ Automated Procedure for Polymer Degradation Testing through Water Immersion usin
 
 This repository contains the final version of the CAD models, 3D printable STL files, and Python scripts used to automate and execute the experimental workflow for Polymer Degradation Testing using UR10-e Robot Arm. 
 
-## Folder Structure
+## Repository Structure
 
 ```
-Last Version/ 
+PolyMersion/ 
 ├── CAD/ 
 │ ├── component1.cad 
 │ ├── component2.cad 
@@ -19,8 +19,12 @@ Last Version/
 │ └── componentN.stl 
 ├── scripts/ 
 │ ├── main.py 
-│ ├── config.json 
-│ └── other_script.py
+│ ├── config.json
+│ ├── robot.py
+│ ├── gripper.py
+│ ├── degradation.py
+│ ├── environment.py 
+│ └── data_processing.py
 ├── requirements.txt
 └── README.md
 ```
@@ -60,9 +64,6 @@ Last Version/
     "timing": {
         "hours_delay": 12,
         "minutes_delay": 0
-    },
-    "fields": {
-        "csv_fields": ["Sample"]
     }
 }
 ```
@@ -76,11 +77,11 @@ Last Version/
 ## Installation
 1. Clone this repository:
 ```
-git clone https://github.com/AMDatIMDEA/BroBot_v2.git
+git clone https://github.com/AMDatIMDEA/PolyMersion.git
 ```
 2. Navigate to the project directory:
 ```
-cd BroBot_v2/Last Version/scripts
+cd BroBot_v2/scripts
 ```
 3. Install dependencies:
 ```
