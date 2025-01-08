@@ -50,13 +50,13 @@ PolyMersion/
 ```
 {
     "robot": {
-        "robot_ip": "192.168.9.29",
+        "robot_ip": "192.168.9.29"
     },
     "experiment": {
         "material": "PLA4043D",
         "temperature": "60C",
         "cycles": 15,
-	    "samples_per_group": 10
+	"samples_per_group": 10
     },
     "grid": {
         "columns": 23,
