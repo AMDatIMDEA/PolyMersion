@@ -32,7 +32,7 @@ PolyMersion/
 - Print the files according to the material and printer specifications suitable for the experiment.
 
 ### 2. Wiring the circuit
-- Follow the circuit depicted in `Arduino\Schematic.png` using the components listed in the publication describing the experiment.
+- Follow the circuit depicted in `Arduino\Schematic.png` using the components listed in the publication describing the experiment or adapting them to your use case.
 ![Circuit schematic](Arduino/Schematic.png)
 
 ### 2. Running the Workflow
