@@ -79,12 +79,13 @@ git clone https://github.com/AMDatIMDEA/PolyMersion.git
 ```
 cd PolyMersion/scripts
 ```
-3. Install dependencies:
+3. Upload the Arduino code in `Arduino/PoliMersion/PoliMersion.ino`
+4. Install dependencies:
 ```
 pip3 install -r requirements.txt
 ```
 
-4. Run the main script:
+5. Run the main script:
 ```
 python3 main.py
 ```
