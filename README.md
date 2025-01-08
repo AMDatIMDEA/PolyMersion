@@ -10,7 +10,8 @@ This repository contains the final version of the CAD models, 3D printable STL f
 ```
 PolyMersion/ 
 ├── CAD/ 
-├── STL/ 
+├── STL/
+├── data/
 ├── scripts/ 
 │ ├── main.py 
 │ ├── config.json
