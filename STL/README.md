@@ -8,7 +8,8 @@ This folder contains the STL files required to fabricate the components for the 
 ### Required Pieces:  
 - **Base Plate (x1)** – The foundational structure for mounting the grid and supporting the specimens.  
 - **Top Plate (x1)** – The upper structural part that holds specimens in place.  
-- **Intermediate Trays (x2 or more)** – Adjustable trays that hold the polymer samples during testing.  
+- **Intermediate Trays (x2 or more)** – Adjustable trays that hold the polymer samples during testing.
+- Remember that 2 trays are neccesary, one for the water bath and the other one outside.  
 
 ### Additional Components:  
 - **Covers and crew covers** - To maintain the structure
@@ -20,7 +21,8 @@ This folder contains the STL files required to fabricate the components for the 
    - Ensure that large components are printed flat to minimize warping.
      
 2. **Printing in Parts**:  
-   - If the full model does not fit within your 3D printer's build volume, the tray can be sliced into sections.  
+   - The **STL files** in this directory are pre-sliced into three parts for each layer of the tray to fit standard print beds, such as the Bambu printer.
+   - CAD files are included to modify this pre-slicing.
    - Use the **tray connectors** to reassemble parts post-printing.  
    - The STL files for the connectors and joining pieces are provided in this folder.  
 
