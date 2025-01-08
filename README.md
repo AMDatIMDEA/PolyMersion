@@ -12,7 +12,7 @@ PolyMersion/
 ├── CAD/ 
 ├── STL/
 ├── data/
-├── arduino/
+├── Arduino/
 ├── scripts/ 
 │ ├── main.py 
 │ ├── config.json
