@@ -40,10 +40,9 @@ This folder contains the STL files required to fabricate the components for the 
 - Tighten all clips and connectors to secure the experiment structure.
 - If you encounter any issues during printing or assembly, consider scaling components slightly or adjusting slicing parameters. 
 
----
-
 ## Files Included  
 - **STL Files** – Ready-to-print 3D models.  
 
+---
 **Note:**  
 If adjustments to the design are required, the CAD folder contains the editable models. Modify them as needed to fit your experimental setup or printer specifications.  
