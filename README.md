@@ -75,16 +75,27 @@ git clone https://github.com/AMDatIMDEA/PolyMersion.git
 ```
 2. Navigate to the project directory:
 ```
-cd BroBot_v2/scripts
+cd PolyMersion/scripts
 ```
 3. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+```
+pip3 install -r requirements.txt
+```
+
 4. Run the main script:
 ```
 python main.py
 ```
+```
+python3 maion.py
+```
+
+## Compatibility  
+- This project has been tested on **MacOS** and **Linux** environments.  
+- If `python` or `pip` defaults to Python 2, use `python3` and `pip3` to ensure compatibility with Python 3.x.  
 
 ## Notes
 - Make sure the 3D printed components match the CAD models used in the experiment.
