@@ -12,7 +12,7 @@ This folder contains the STL files required to fabricate the components for the 
 - Remember that 2 trays are neccesary, one for the water bath and the other one outside.  
 
 ### Additional Components:  
-- **Covers and crew covers** - To maintain the structure.
+- **Screw covers** - To maintain the structure.
 - **Tray Connectors** – Connectors are included to join trays if they need to be printed in separate sections.  
 - **Complements** – Complementary parts as water level controller, scale adapter and gripper. 
 
