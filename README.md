@@ -10,13 +10,7 @@ This repository contains the final version of the CAD models, 3D printable STL f
 ```
 PolyMersion/ 
 ├── CAD/ 
-│ ├── component1.cad 
-│ ├── component2.cad 
-│ └── componentN.cad 
 ├── STL/ 
-│ ├── component1.stl 
-│ ├── component2.stl 
-│ └── componentN.stl 
 ├── scripts/ 
 │ ├── main.py 
 │ ├── config.json
