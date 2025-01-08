@@ -1,0 +1,20 @@
+{
+    "robot": {
+        "robot_ip": "192.168.9.29"
+    },
+    "experiment": {
+        "material": "PLA_Petra",
+        "temperature": "60C",
+        "cycles": 10,
+	"samples_per_group": 10
+    },
+    "grid": {
+        "columns": 23,
+        "rows": 11
+    },
+    "timing": {
+        "hours_delay": 12,
+        "minutes_delay": 0
+    }
+}
+
