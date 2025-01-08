@@ -3,7 +3,7 @@ Automated Procedure for Polymer Degradation Testing through Water Immersion usin
 
 ## Overview
 
-This repository contains the final version of the CAD models, 3D printable STL files, and Python scripts used to automate and execute the experimental workflow for Polymer Degradation Testing using UR10-e Robot Arm. 
+This repository contains the final version of the CAD models, 3D printable STL files, and Python scripts used to automate and execute the experimental workflow for Polymer Degradation Testing using UR10-e Robot Arm. Also includes the code for the Arduino.
 
 ## Repository Structure
 
@@ -12,7 +12,7 @@ PolyMersion/
 ├── CAD/ 
 ├── STL/
 ├── data/
-├── arduino/
+├── arduino/PolyMersion/PolyMersion.ino
 ├── scripts/ 
 │ ├── main.py 
 │ ├── config.json
