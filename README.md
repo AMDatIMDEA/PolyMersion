@@ -31,6 +31,10 @@ PolyMersion/
 - The STL files located in the `STL` folder are ready to be used for 3D printing.
 - Print the files according to the material and printer specifications suitable for the experiment.
 
+### 2. Wiring the circuit
+- Follow the circuit depicted in `Arduino\Schematic.png` using the components listed in the publication describing the experiment.
+![Circuit schematic](Arduino/Schematic.png)
+
 ### 2. Running the Workflow
 
 - The experimental workflow can be executed using the Python script `main.py`.
