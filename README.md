@@ -81,16 +81,10 @@ cd PolyMersion/scripts
 ```
 3. Install dependencies:
 ```
-pip install -r requirements.txt
-```
-```
 pip3 install -r requirements.txt
 ```
 
 4. Run the main script:
-```
-python main.py
-```
 ```
 python3 main.py
 ```
