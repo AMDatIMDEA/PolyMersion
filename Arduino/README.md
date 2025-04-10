@@ -10,7 +10,7 @@ In case of using two water baths, you will need to install a new water level sen
 
 All Dallas Temperature sensors share the data transfer pin throught the One Wire protocol, and are differenciated by their address. This guide explains in detail the wiring and how to find the adress so it can be scales to multiple water baths.
 
-To install the Arduino code in the board, use Arduino GUI or the Arduino CLI tool.
+To install the Arduino code in the board, use Arduino GUI or the Arduino CLI tool. The OneWire.h and DallasTemperature.h libraries are required.
 
 The code serves three functions:
 1. Refill each of the water baths when their corresponding floating switch detects that the water level is low.
