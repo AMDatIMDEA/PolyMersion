@@ -8,7 +8,8 @@ The schematics for running with only one bath are presented in the following fig
 In case of using two water baths, you will need to install a new water level sensor, temperature sensor and add another pump to the free ports in the L289N driver. 
 
 
-All Dallas Temperature sensors share the data transfer pin throught the One Wire protocol, and are differenciated by their address. This guide explains in detail the wiring and how to find the adress so it can be scaled to multiple water baths.
+All Dallas Temperature sensors share the data transfer pin throught the One Wire protocol, and are differenciated by their address. This guide explains in detail the wiring and how to find the adress so it can be scaled to multiple water baths:
+https://lastminuteengineers.com/multiple-ds18b20-arduino-tutorial/
 
 To install the Arduino code in the board, use Arduino GUI or the Arduino CLI tool. The OneWire.h and DallasTemperature.h libraries are required.
 
