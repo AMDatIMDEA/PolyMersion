@@ -61,14 +61,13 @@ PolyMersion/
   
 ![Circuit schematic](Arduino/Schematic.png)
 
-### 2. Running the Workflow
+### 3. Running the Workflow
 
-- 
-- The experimental workflow can be executed using the Python script `main.py`.
+- The experimental workflow can be executed using the instructions in each README.md file.
 - Parameters such as the number of specimens, cycle length, and other relevant variables can be adjusted by modifying the `config.json` file.
 - No changes to the Python code are necessary—simply update the JSON file to reflect the desired settings.
 
-### 3. Configuration
+### 4. Configuration
 
 - The `config.json` file allows users to easily configure the experiment without altering the codebase.
 - Example of a `config.json` structure:
@@ -100,6 +99,7 @@ PolyMersion/
 ```
 > 💡 Each version (`scripts_v1`, `scripts_v2`) may have slightly different config parameters depending on bath logic. Check the `config.json` in each folder for version-specific options.
 
+---
 ## Installation
 1. Clone this repository:
 ```
