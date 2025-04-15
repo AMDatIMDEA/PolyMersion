@@ -63,9 +63,32 @@ PolyMersion/
 
 ### 3. Running the Workflow
 
-- The experimental workflow can be executed using the instructions in each README.md file.
 - Parameters such as the number of specimens, cycle length, and other relevant variables can be adjusted by modifying the `config.json` file.
 - No changes to the Python code are necessary—simply update the JSON file to reflect the desired settings.
+
+1. Clone this repository:
+```
+git clone https://github.com/AMDatIMDEA/PolyMersion.git
+```
+
+2. Choose the version you want to use:
+   - For single bath → `cd PolyMersion/scripts_v1`
+   - For dual bath → `cd PolyMersion/scripts_v2`
+     
+3. Upload the Arduino code:
+   ```bash
+   cd PolyMersion/Arduino/PoliMersion
+   open PoliMersion.ino  # Or use the Arduino IDE
+   ```
+
+3. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Edit the `config.json` file to configure your experiment (see below).
+
+5. Run the workflow following the instructions in the README.md file that you have chosen.
 
 ### 4. Configuration
 
@@ -100,40 +123,10 @@ PolyMersion/
 > 💡 Each version (`scripts_v1`, `scripts_v2`) may have slightly different config parameters depending on bath logic. Check the `config.json` in each folder for version-specific options.
 
 ---
-## Installation
-1. Clone this repository:
-```
-git clone https://github.com/AMDatIMDEA/PolyMersion.git
-```
-
-2. Choose the version you want to use:
-   - For single bath → `cd PolyMersion/scripts_v1`
-   - For dual bath → `cd PolyMersion/scripts_v2`
-     
-3. Upload the Arduino code:
-   ```bash
-   cd PolyMersion/Arduino/PoliMersion
-   open PoliMersion.ino  # Or use the Arduino IDE
-   ```
-
-3. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Edit the `config.json` file to configure your experiment (see below).
-
-5. Run the workflow following the instructions in the README.md file that you have chosen.
-
 ## Requirements
 
 - Python 3.x
 - Required libraries listed in `requirements.txt`
-
-You can install them via:
-```bash
-pip install -r requirements.txt
-```
 
 ## Compatibility  
 
