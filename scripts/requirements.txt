@@ -1,9 +1,0 @@
-numpy
-pandas
-matplotlib
-scipy
-json
-csv
-time
-os
-ur-rtde
