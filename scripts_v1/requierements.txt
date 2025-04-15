@@ -1,8 +1,0 @@
-# Requires python
-python_version >= "3.11"
-
-numpy==2.2.2
-pandas==2.2.3
-matplotlib==3.10.1
-pyserial==3.5
-ur_rtde==1.5.9
