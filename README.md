@@ -1,5 +1,18 @@
 # PolyMersion
+
 Automated Procedure for Polymer Degradation Testing through Water Immersion using UR10-e Robot Arm
+
+---
+### Project Structure
+
+This repository contains two versions of the experimental workflow:
+
+- `scripts_v1`: Single-bath experiment version.
+- `scripts_v2`: Dual-bath experiment version.
+
+Each version is self-contained and configurable via a `config.json` file and a separate README.md file for a more thorough explanation.
+
+---
 
 ## Overview
 
@@ -13,8 +26,19 @@ PolyMersion/
 ├── STL/
 ├── data/
 ├── Arduino/
-├── scripts/ 
+├── scripts_v1/
+│ ├── README.md
 │ ├── main.py 
+│ ├── config.json
+│ ├── robot.py
+│ ├── gripper.py
+│ ├── degradation.py
+│ ├── environment.py 
+│ └── data_processing.py
+├── scripts_v2/
+│ ├── README.md
+│ ├── client.py
+│ ├── listener.py
 │ ├── config.json
 │ ├── robot.py
 │ ├── gripper.py
@@ -38,6 +62,7 @@ PolyMersion/
 
 ### 2. Running the Workflow
 
+- 
 - The experimental workflow can be executed using the Python script `main.py`.
 - Parameters such as the number of specimens, cycle length, and other relevant variables can be adjusted by modifying the `config.json` file.
 - No changes to the Python code are necessary—simply update the JSON file to reflect the desired settings.
@@ -50,54 +75,73 @@ PolyMersion/
 ```
 {
     "robot": {
-        "robot_ip": "192.168.9.29"
+        "robot_ip": "192.168.9.29",
+        "setup": 2,
+        "choice": 1 # 1: Extract samples to external tray, 2: Leave the samples in the internal tray	
     },
     "experiment": {
         "material": "PLA",
-        "temperature": "60C",
-        "cycles": 15,
-	"samples_per_group": 10,
-	"starting_cycle": 1
+        "temperature": 40,
+        "cycles": 23,
+        "subcycles": 1,
+	"samples_per_subcycle": 10,
+	"starting_cycle": 15
     },
     "grid": {
         "columns": 23,
         "rows": 11
     },
     "timing": {
-        "hours_delay": 12,
+        "hours_delay": 5,
         "minutes_delay": 0
     }
 }
 ```
-
-## Requirements
-
-- Python 3.x
-- Required libraries listed in `requirements.txt`
+> 💡 Each version (`scripts_v1`, `scripts_v2`) may have slightly different config parameters depending on bath logic. Check the `config.json` in each folder for version-specific options.
 
 ## Installation
 1. Clone this repository:
 ```
 git clone https://github.com/AMDatIMDEA/PolyMersion.git
 ```
-2. Navigate to the project directory:
-```
-cd PolyMersion/scripts
-```
-3. Upload the Arduino code in `Arduino/PoliMersion/PoliMersion.ino`
-4. Install dependencies:
-```
-pip3 install -r requirements.txt
-```
 
-5. Run the main script:
-```
-python3 main.py
+2. Choose the version you want to use:
+   - For single bath → `cd PolyMersion/scripts_v1`
+   - For dual bath → `cd PolyMersion/scripts_v2`
+     
+3. Upload the Arduino code:
+   ```bash
+   cd PolyMersion/Arduino/PoliMersion
+   open PoliMersion.ino  # Or use the Arduino IDE
+   ```
+
+3. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Edit the `config.json` file to configure your experiment (see below).
+
+5. Run the workflow following the instructions in the README.md file that you have chosen.
+
+## Requirements
+
+- Python 3.x
+- Required libraries listed in `requirements.txt`
+
+You can install them via:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Compatibility  
-- This project has been tested on **MacOS** and **Linux** environments.  
-- If `python` or `pip` defaults to Python 2, use `python3` and `pip3` to ensure compatibility with Python 3.x.  
+
+This project has been tested on:
+
+- ✅ macOS
+- ✅ Linux
+  
+> ⚠️ If `python` or `pip` refers to Python 2 on your system, use `python3` and `pip3` instead.
 
 ## Notes
 - Make sure the 3D printed components match the CAD models used in the experiment.
