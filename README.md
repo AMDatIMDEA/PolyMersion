@@ -54,6 +54,7 @@ PolyMersion/
 
 - The STL files located in the `STL` folder are ready to be used for 3D printing.
 - Print the files according to the material and printer specifications suitable for the experiment.
+- Included are files for designing trays for impact and tensile test samples, and a README.md file specifying the tray assembly.
 
 ### 2. Wiring the circuit
 - Follow the circuit depicted in `Arduino\Schematic.png` using the components listed in the publication describing the experiment or adapting them to your use case.
