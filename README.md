@@ -39,7 +39,8 @@ PolyMersion/
 │ ├── README.md
 │ ├── client.py
 │ ├── listener.py
-│ ├── config.json
+│ ├── config1.json
+│ ├── config2.json
 │ ├── robot.py
 │ ├── gripper.py
 │ ├── degradation.py
@@ -99,7 +100,7 @@ git clone https://github.com/AMDatIMDEA/PolyMersion.git
 {
     "robot": {
         "robot_ip": "192.168.9.29",
-        "setup": 2,
+        "setup": 1,
         "choice": 1 # 1: Extract samples to external tray, 2: Leave the samples in the internal tray	
     },
     "experiment": {
