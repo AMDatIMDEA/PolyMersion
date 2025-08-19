@@ -1,0 +1,24 @@
+{
+    "robot": {
+        "robot_ip": "192.168.9.29",
+        "setup": 2,
+        "choice": 1
+    },
+    "experiment": {
+        "material": "Petra_BN_missed2",
+        "temperature": 40,
+        "cycles": 23,
+        "subcycles": 1,
+	    "samples_per_subcycle": 10,
+	    "starting_cycle": 3
+    },
+    "grid": {
+        "columns": 23,
+        "rows": 11
+    },
+    "timing": {
+        "hours_delay": 0,
+        "minutes_delay": 25
+    }
+}
+
