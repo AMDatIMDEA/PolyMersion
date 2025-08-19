@@ -38,7 +38,7 @@ python listener.py
 
 5. In another terminal, run one or more `client.py` scripts:
 ```bash
-python client.py
+python client.py --config config1.json --setup 1
 ```
 
 ---
